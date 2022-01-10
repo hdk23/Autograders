@@ -1,0 +1,19 @@
+c
+10
+c
+-10
+d
+1
+3
+s
+1
+3
+p
+Leonardo DiCaprio
+p
+Henry Kim
+u
+Tom Cruise
+u
+Henry Kim
+q
