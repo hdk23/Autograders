@@ -115,8 +115,8 @@ function renameSectionFiles()
 # TODO: YOU CHANGE THIS PART
 term=22W
 section=""
-section="desirrichard fickalexander mbesamuthoni middelbergnicholas odigbochukwuka petrindamien rinconmarco yangcamille"
-assignment=SA-0
+section="desirrichard fickalexander khalilkarim mbesamuthoni middelbergnicholas odigbochukwuka petrindamien rinconmarco seokbryant yangcamille"
+assignment=SA-7
 submissionFolderName="submissions"
 
 # commands——DO NOT TOUCH

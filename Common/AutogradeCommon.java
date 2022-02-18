@@ -16,9 +16,15 @@ public class AutogradeCommon {
      * @return the number of points earned for the test case (either 0 or the parameter points)
      */
     public static double displayMessage(boolean condition, double points, String error){
-        if (!condition) {
-            String message = String.format("-%.2f for %s", points, error);
-            System.out.println(message);
+        try {
+            if (!condition) {
+                String message = String.format("-%.1f for %s", points, error);
+                System.out.println(message);
+                return 0;
+            }
+        } catch (Exception e) {
+            System.out.println(""+e);
+            String message = String.format("-%.1f for %s", points, error);
             return 0;
         }
         return points;

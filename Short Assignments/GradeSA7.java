@@ -51,7 +51,7 @@ public class GradeSA7 {
             path = GraphLib.randomWalk(relationships, "A",10);
         } while (path.size() > relationships.numVertices());
 
-        path = new ArrayList<>();
+//        path = new ArrayList<>();
         for (int i = 1; i < path.size(); i++) {
             if (!relationships.hasEdge(path.get(i-1), path.get(i))) {
                 validPath = false;
@@ -61,7 +61,7 @@ public class GradeSA7 {
 
         score += AutogradeCommon.displayMessage(validPath, 0.5, "not producing a valid path for a path with more steps than the number of vertices");
 
-        score += AutogradeCommon.displayMessage(GraphLib.randomWalk(relationships,  "F",1) == null ||
+        score += AutogradeCommon.displayMessage(
                         GraphLib.randomWalk(relationships,  "F",1).size() == 0, 0.5,
                 "not returning null or an empty list when a walk is attempted on a nonexistent vertex");
         System.out.println();

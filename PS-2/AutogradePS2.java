@@ -1,3 +1,4 @@
+import java.io.PrintStream;
 import java.util.ArrayList;
 
 /**
@@ -51,8 +52,8 @@ public class AutogradePS2 {
     public static double gradePS2(String term, String folderName, String name, String solutionImagePath, String studentImagePath) {
         long start = System.currentTimeMillis();
         try {
-//            PrintStream fileOut = new PrintStream("Grading/"+term+"/PS/PS-2/"+ folderName +"/PS-2 Scoring Sheet " + name + ".txt");
-//            System.setOut(fileOut);
+            PrintStream fileOut = new PrintStream("Grading/"+term+"/PS/PS-2/"+ folderName +"/PS-2 Scoring Sheet " + name + ".txt");
+            System.setOut(fileOut);
         }
         catch (Exception e) {
 
@@ -76,6 +77,6 @@ public class AutogradePS2 {
     }
 
     public static void main(String[]args) {
-        gradePS2("22W","kimhenry", "Henry Kim", "Autograders/PS-2/drawTreeSolution.png", "Autograders/PS-2/studentCopy.png");
+        gradePS2("22W","test", "Nate Kim", "Autograders/PS-2/drawTreeSolution.png", "Autograders/PS-2/studentCopy.png");
     }
 }
