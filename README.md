@@ -1,4 +1,4 @@
-# CS 10 Problem Set Autograders
+# CS 10 Autograders
 ## Henry Kim, CS 10 TA, Fall 2021
 
 ---
